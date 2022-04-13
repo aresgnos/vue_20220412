@@ -5,6 +5,10 @@ import About from '@/components/About.vue'
 import Board from '@/components/Board.vue'
 import BoardWrite from '@/components/BoardWrite.vue'
 import BoardOne from '@/components/BoardOne.vue'
+import Join from '@/components/Join.vue'
+import Login from '@/components/Login.vue'
+import Mqtt from '@/components/Mqtt.vue'
+
 
 
 
@@ -13,7 +17,10 @@ const routes = [
     { path:'/about', name:"About", component:About },
     { path:'/board', name:"Board", component:Board },
     { path:'/boardwrite', name:"BoardWrite", component:BoardWrite },
-    { path:'/boardone', name:"BoardOne", component:BoardOne }
+    { path:'/boardone', name:"BoardOne", component:BoardOne },
+    { path:'/join', name:"Join", component:Join },
+    { path:'/login', name:"Login", component:Login },
+    { path:'/mqtt', name:"Mqtt", component:Mqtt },
 ];
   
 const router = createRouter({
