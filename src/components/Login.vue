@@ -10,9 +10,11 @@
 
 <script>
 import { reactive } from 'vue';
+import { useRouter } from 'vue-router';
 import axios from 'axios';
 export default {
     setup () {
+        const router = useRouter();
 
         const state = reactive ({
            uemail : '',
@@ -29,7 +31,9 @@ export default {
             const response = await axios.post(url, body, {headers});
             console.log(response.data);
             if(response.data.status===200){
+                sessionStorage.setItem("TOKEN", response.data.token);
                 alert('로그인 되었습니다.');
+                router.push({name:'Home'});
             }
 
         }

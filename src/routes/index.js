@@ -8,6 +8,7 @@ import BoardOne from '@/components/BoardOne.vue'
 import Join from '@/components/Join.vue'
 import Login from '@/components/Login.vue'
 import Mqtt from '@/components/Mqtt.vue'
+import Buy from '@/components/Buy.vue'
 
 
 
@@ -21,6 +22,7 @@ const routes = [
     { path:'/join', name:"Join", component:Join },
     { path:'/login', name:"Login", component:Login },
     { path:'/mqtt', name:"Mqtt", component:Mqtt },
+    { path:'/buy', name:"Buy", component:Buy },
 ];
   
 const router = createRouter({
