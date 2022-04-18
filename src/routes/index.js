@@ -9,6 +9,7 @@ import Join from '@/components/Join.vue'
 import Login from '@/components/Login.vue'
 import Mqtt from '@/components/Mqtt.vue'
 import Buy from '@/components/Buy.vue'
+import Product from '@/components/Product.vue'
 
 
 
@@ -23,6 +24,7 @@ const routes = [
     { path:'/login', name:"Login", component:Login },
     { path:'/mqtt', name:"Mqtt", component:Mqtt },
     { path:'/buy', name:"Buy", component:Buy },
+    { path:'/product', name:"Product", component:Product }
 ];
   
 const router = createRouter({
