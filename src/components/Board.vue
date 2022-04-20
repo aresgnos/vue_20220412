@@ -31,7 +31,7 @@ export default {
         const state = reactive({
             page : 1,
         });
-
+    
         const handleData = async() => {
             const url = `/ROOT/api/board/selectlist?page=${state.page}`;
             const headers = {"Content-Type" : "application/json"};

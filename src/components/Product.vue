@@ -88,6 +88,7 @@ export default {
             console.log(response.data);
         }
 
+
         return {state,handleImage, handleInsert, handleImage1, handleInsert1}
     }
 }
